@@ -1,0 +1,58 @@
+{
+  "@context": "https://mailschema.org/contexts/map-0.3.jsonld",
+  "@type": "MailAction",
+  "profile": "https://mailschema.org/profiles/map/0.3",
+  "type": {
+    "id": "https://mailschema.org/types/campaign-send-approval",
+    "version": "0.1",
+    "contractDigest": "sha-256:de3c88a0712adb1d0c6e82f437b825c83520d8e1c44c7b032a2cfcfe5ce55731"
+  },
+  "@id": "urn:uuid:7c1d4a3e-2b96-4f08-9c51-0e8a5d6b7f21",
+  "issuedAt": "2026-10-20T06:00:00Z",
+  "expiresAt": "2026-10-21T06:00:00Z",
+  "inLanguage": "de",
+  "service": {
+    "id": "https://openclaw.example",
+    "tenant": "urn:openclaw:tenant:claw-julian"
+  },
+  "recipient": "julian-oppermann@outlook.de",
+  "subject": {
+    "id": "urn:openclaw:digest:morgenbrief-20261020",
+    "title": "Morgenbrief vom 20. Oktober 2026"
+  },
+  "terms": {
+    "id": "urn:openclaw:proposal:morgenbrief-20261020-r1",
+    "version": "r1"
+  },
+  "human": {
+    "url": "https://openclaw.example/review/morgenbrief-20261020"
+  },
+  "details": {
+    "summary": "Der taegliche Morgenbrief ist fertig zusammengestellt: Wetter, Termine und offene Aufgaben fuer den 20. Oktober 2026. Bitte pruefe den Inhalt und gib den Versand frei.",
+    "requester": "Claw Morgenbrief-Assistent",
+    "content": {
+      "id": "urn:openclaw:content:morgenbrief-20261020",
+      "revision": "r1",
+      "digest": "sha-256:3f9b21c8d4e7a05b6c1f8e2d9a4b7c0e5f3d1a8b6c9e2f4a7d0b3c5e8f1a2d46",
+      "title": "Morgenbrief 2026-10-20"
+    },
+    "sender": {
+      "mailbox": "brief@openclaw.example",
+      "name": "Claw Morgenbrief"
+    },
+    "audience": {
+      "id": "urn:openclaw:audience:julian",
+      "revision": "snapshot-1",
+      "count": 1,
+      "label": "Julian (Einzelempfaenger)"
+    },
+    "schedule": {
+      "mode": "immediate"
+    }
+  },
+  "operations": [
+    { "id": "approve" },
+    { "id": "decline" },
+    { "id": "request-changes" }
+  ]
+}
